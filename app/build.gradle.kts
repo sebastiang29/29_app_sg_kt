@@ -56,4 +56,11 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    //Plugin FCM
+    apply(plugin = "com.google.gms.google-services")
+    implementation (platform("com.google.firebase:firebase-bom:32.1.1"))
+    implementation ("com.google.firebase:firebase-messaging")
+    implementation ("com.google.firebase:firebase-analytics")
+    //Plugin FCM
 }

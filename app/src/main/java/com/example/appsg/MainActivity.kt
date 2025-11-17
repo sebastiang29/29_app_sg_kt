@@ -18,9 +18,14 @@ import com.example.appsg.ui.theme.AppSGTheme
 import android.util.Log
 import androidx.compose.ui.platform.LocalContext
 
+//Plugin FCM
+import com.netsend.NetSend
+//Plugin FCM
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        NetSend.initializeNetSend(this, "YOUR_USER_KEY_HERE")
         enableEdgeToEdge()
         setContent {
             AppSGTheme {
